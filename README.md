@@ -14,21 +14,21 @@ This standard can be installed with the [Composer](https://getcomposer.org/) dep
 
 2. Setup repositry in composer.json
 
-				"repositories": [
-		        {
-		            "type": "vcs",
-		            "url": "git@github.com:aakb/php-coding-standard.git"
-		        }
-		    ],
+        "repositories": [
+            {
+                "type": "vcs",
+                "url": "git@github.com:aakb/php-coding-standard.git"
+            }
+        ],
 
 4. Add setup scripts to composer.json.
 
-		 		"scripts": {
-		        "post-install-cmd": [
-		            "vendor/bin/phpcs --config-set installed_paths vendor/aakb/php-coding-standard",
-		            "ln -s vendor/aakb/php-coding-standard/hooks/pre-commit .git/hooks/pre-commit"
-		        ]
-		    }
+        "scripts": {
+            "post-install-cmd": [
+                "vendor/bin/phpcs --config-set installed_paths vendor/aakb/php-coding-standard",
+                "ln -s vendor/aakb/php-coding-standard/hooks/pre-commit .git/hooks/pre-commit"
+            ]
+        }
 
 3. Install the coding standard as a dependency of your project
 
@@ -42,7 +42,7 @@ This standard can be installed with the [Composer](https://getcomposer.org/) dep
 
 2. Add pre-commit hook.
 
-				ln -s vendor/aakb/php-coding-standard/hooks/pre-commit .git/hooks/pre-commit
+        ln -s vendor/aakb/php-coding-standard/hooks/pre-commit .git/hooks/pre-commit
 
 2. Check the installed coding standards for "Symfony"
 
