@@ -115,6 +115,10 @@
         <severity>0</severity>
     </rule>
 
+    <rule ref="PEAR.Classes.ClassDeclaration.OpenBraceNewLine">
+        <severity>0</severity>
+    </rule>
+
     <rule ref="Symfony.Commenting.FunctionComment.MissingParamComment">
         <severity>0</severity>
     </rule>
