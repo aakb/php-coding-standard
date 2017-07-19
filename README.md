@@ -21,12 +21,13 @@ This standard can be installed with the [Composer](https://getcomposer.org/) dep
             }
         ],
 
-4. Add setup scripts to composer.json.
+4. Add setup scripts to composer.json. __Note__ that for already installed sites you may also added it to "post-update-cmd".
 
         "scripts": {
             "post-install-cmd": [
                 "vendor/bin/phpcs --config-set installed_paths vendor/aakb/php-coding-standard",
-                "ln -s vendor/aakb/php-coding-standard/hooks/pre-commit .git/hooks/pre-commit"
+                "cp -f vendor/aakb/php-coding-standard/hooks/pre-commit .git/hooks/pre-commit",
+                "chmod 755 .git/hooks/pre-commit"
             ]
         }
 
