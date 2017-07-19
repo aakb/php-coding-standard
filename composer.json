@@ -23,5 +23,11 @@
     "minimum-stability": "dev",
     "require": {
         "squizlabs/php_codesniffer": "3.*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "vendor/bin/phpcs --config-set installed_paths vendor/aakb/php-coding-standard",
+            "ln -s vendor/aakb/php-coding-standard/hooks/pre-commit .git/hooks/pre-commit"
+        ]
     }
 }
