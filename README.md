@@ -12,18 +12,27 @@ This standard can be installed with the [Composer](https://getcomposer.org/) dep
 
 1. [Install Composer](https://getcomposer.org/doc/00-intro.md)
 
-2. Install the coding standard as a dependency of your project
+2. Setup repositry in composer.json
+
+				"repositories": [
+		        {
+		            "type": "vcs",
+		            "url": "git@github.com:aakb/php-coding-standard.git"
+		        }
+		    ],
+
+3. Install the coding standard as a dependency of your project
 
         composer require --dev aakb/php-coding-standard:~1.0
 
-3. Add the coding standard to the PHP_CodeSniffer install path
+4. Add the coding standard to the PHP_CodeSniffer install path
 
         vendor/bin/phpcs --config-set installed_paths vendor/aakb/php-coding-standard
 
-4. Check the installed coding standards for "Symfony"
+5. Check the installed coding standards for "Symfony"
 
         vendor/bin/phpcs -i
 
-5. Done!
+6. Done!
 
         vendor/bin/phpcs /path/to/code
