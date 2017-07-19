@@ -2,7 +2,8 @@
 
 A coding standard to check against the [Symfony coding standards](http://symfony.com/doc/current/contributing/code/standards.html), originally shamelessly copied from the -disappeared- opensky/Symfony2-coding-standard repository.
 
-Based on https://packagist.org/packages/escapestudios/symfony2-coding-standard
+Symfony based on https://packagist.org/packages/escapestudios/symfony2-coding-standard
+Symfony based on https://www.drupal.org/project/coder
 
 ## Installation
 
